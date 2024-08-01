@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PrintPhoto</title>
+    <style>
+        @keyframes title-animation {
+            0% { color: #4B2E2E; transform: scale(1); }
+            50% { color: #8B4513; transform: scale(1.1); }
+            100% { color: #4B2E2E; transform: scale(1); }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2E2E2E;
+            color: #F5F5F5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4B2E2E;
+            color: #F5F5F5;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 36px;
+            text-transform: uppercase;
+            animation: title-animation 3s infinite;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #3B3B3B;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        h2, h3 {
+            color: #8B4513;
+        }
+        p, ul {
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .section-title {
+            cursor: pointer;
+            margin-top: 20px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .section-title:hover {
+            color: #F5F5F5;
+            transform: scale(1.05);
+        }
+        .section-content {
+            display: none;
+            padding-left: 20px;
+        }
+        .navigation {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .navigation a {
+            color: #8B4513;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .navigation a:hover {
+            color: #F5F5F5;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sectionTitles = document.querySelectorAll('.section-title');
+            sectionTitles.forEach(title => {
+                title.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy</h1>
+    </header>
+    <main>
+        <div class="navigation">
+            <a href="index.html">Personal Data Deletion Request</a>
+        </div>
+        <p>
+            This privacy policy describes how the PrintPhoto application (hereinafter referred to as "the Application") collects, uses, shares, and protects the personal data of its users (hereinafter referred to as "Users"). By using the Application, you fully accept the terms of this policy.
+        </p>
+        <h2 class="section-title">1. Data Collection</h2>
+        <div class="section-content">
+            <p>When using the Application, we may collect the following personal data:</p>
+            <ul>
+                <li>Identification Data: Name, first name, email address, password (encrypted).</li>
+                <li>Location Data: Geolocation data to connect users and track routes.</li>
+                <li>Payment Data: Credit card information (collected by Stripe and stored securely).</li>
+                <li>Communication Data: Chat history.</li>
+                <li>Usage Data: Information about your use of the Application (pages viewed, features used, etc.).</li>
+            </ul>
+        </div>
+        <h2 class="section-title">2. Use of Data</h2>
+        <div class="section-content">
+            <p>The collected data is used to:</p>
+            <ul>
+                <li>Provide the Application's services: Connect users, enable chat exchanges, manage payments.</li>
+                <li>Personalize your experience: Tailor the content and features of the Application based on your preferences.</li>
+                <li>Improve the Application: Analyze the use of the Application to identify areas for improvement and develop new features.</li>
+                <li>Ensure security: Prevent and detect fraud and abuse.</li>
+            </ul>
+        </div>
+        <h2 class="section-title">3. Data Sharing</h2>
+        <div class="section-content">
+            <p>We do not share your personal data with third parties, except in the following cases:</p>
+            <ul>
+                <li>Service Providers: We may share your data with third-party service providers (hosting, payment processors, etc.) in connection with providing the Application's services. These providers are required to adhere to the same privacy standards as we do.</li>
+                <li>Legal Obligations: We may be required to disclose your data in response to legal requests (court orders, legal subpoenas, etc.).</li>
+                <li>Protection of Our Rights: We may disclose your data if we believe it is necessary to protect our rights, property, or safety, or that of our users.</li>
+            </ul>
+        </div>
+        <h2 class="section-title">4. Data Security</h2>
+        <div class="section-content">
+            <p>We implement appropriate technical and organizational security measures to protect your personal data from unauthorized access, use, disclosure, alteration, or destruction.</p>
+        </div>
+        <h2 class="section-title">5. Your Rights</h2>
+        <div class="section-content">
+            <p>You have the following rights regarding your personal data:</p>
+            <ul>
+                <li>Right of Access: You can request to access the personal data we hold about you.</li>
+                <li>Right of Rectification: You can request to correct any inaccurate personal data.</li>
+                <li>Right of Erasure: You can request to delete your personal data, subject to certain legal exceptions.</li>
+                <li>Right to Object: You can object to the processing of your personal data for certain purposes.</li>
+                <li>Right to Restriction: You can request to restrict the processing of your personal data.</li>
+                <li>Right to Data Portability: You can request to receive your personal data in a structured, commonly used, and machine-readable format.</li>
+            </ul>
+            <p>To exercise these rights, please contact us at the following email address: [Your email address].</p>
+        </div>
+        <h2 class="section-title">6. Changes to the Privacy Policy</h2>
+        <div class="section-content">
+            <p>We reserve the right to modify these privacy rules at any time. Any changes will be notified on the Application and will take effect on the date of publication.</p>
+        </div>
+        <h2 class="section-title">7. Governing Law</h2>
+        <div class="section-content">
+            <p>This privacy policy is governed by French law.</p>
+        </div>
+        <h2 class="section-title">8. Contact</h2>
+        <div class="section-content">
+            <p>For any questions regarding personal data protection, you can contact us at the following email address: [Your email address].</p>
+        </div>
+    </main>
+</body>
+</html>
