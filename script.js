@@ -12,4 +12,8 @@ document.getElementById('deletionForm').addEventListener('submit', function(even
     `;
 
     window.location.href = `mailto:printphoto.db@gmail.com?subject=Demande de Suppression de Données Personnelles&body=${encodeURIComponent(emailBody)}`;
-});
+
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('reason').value = '';
+}); 
